@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  /* font-family: 'Poppins', sans-serif; */
+  font-size:x-large;
+  font-weight:1000;
+  text-transform: capitalize;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#mainContainer{
+  width: 600px;
+  /* height: 600px; */
+  min-height: 600px;
+  height: auto;
+  margin-bottom: 50px;
+  margin: 0 auto;
+  background-color:rgb(93, 77, 77);
+  /* border: 2px solid black; */
+  box-shadow:2px 2px 5px 5px #817f7f;
+}
+#container {
+  width: 500px;
+  margin: 0 auto;
+  background-color:antiquewhite
+}
+ul {
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid #e5e5e5; */
+}
+ul li {
+  padding: 5px;
+  /* padding-left: 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: inherit;
+  align-items: center;
+}
+ul li:hover {
+  background: #9a3a3a;
+}
+#list input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+#list label {
+  position: relative;
+  cursor: pointer;
+}
+
+#list label:before {
+  content:'';
+  /* -webkit-appearance: none; */
+  background-color: transparent;
+  border: 2px solid #0079bf;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+}
+#list input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+#list input:checked + label:before {
+  background: #0079bf;
+} 
+#list input:checked + label {
+  text-decoration: line-through;
+}
+.delete {
+  height: 35px;
+    padding: 5px 0px;
+    border-radius: 3px;
+    background-color: #9a3a3a;
+}
+.delete:hover {
+  background: #f2f2f2;
+  cursor: pointer;
+}
+h1 {
+  text-align: center;
+}
+.add-task {
+  width: 100%;
+    outline: none;
+    font-size: 15px;
+    padding: 11px;
+    border: 1px solid #f3f3f3;
+    margin-bottom: 3px;
+}
+.total-tasks {
+  margin-bottom: 20px;
+  font-size: 13px;
+    margin-left: 2px;
+    color: gray;
+}
+
+#clearAll:hover{
+  cursor: pointer;
+}
+#add{
+  display: inline-block;
+  /* margin-top: -30px; */
+}
+
+#history{
+  cursor: pointer;
+}
+
+#completedTask{
+  margin-left: 50%;
+  /* cursor: pointer; */
+}
