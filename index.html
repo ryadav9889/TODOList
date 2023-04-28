@@ -6,23 +6,28 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <!-- heading -->
     <h1>Todo List App</h1>
+    <!-- main container -->
     <div id="mainContainer">
+      <!-- second container which contain text area and list item -->
       <div id="container">
+        <!-- text Area -->
         <input placeholder=" Type Task And Click Enter To Add " class="add-task" id="add"/>
-        
+        <!-- total task (list item count) -->
         <span class="total-tasks">Total tasks: <span id="tasks-counter">0</span></span>
-       
-
+        <!-- unorder list for task -->
         <ul id="list">
+          <!-- list item -->
           <li>
-            <!-- <input type="checkbox" id="task1" data-id="12" class="custom-checkbox">
-            <label for="task1">Buy groceries</label>
-            <img src="bin.svg" class="delete" data-id="12" /> -->
+           <!-- list item or task is added by the js file -->
           </li>
         </ul>
+        <!-- span for clear all item in list -->
         <span class="total-tasks" id="clearAll">Clear All</span>
+        <!--  to see history  -->
         <span class="total-tasks" id="history">history</span>
+        <!-- label to show completed task count -->
         <span class="total-tasks" id="completedTask">Completed Task:<span id="tasks-completed">0</span></span>
         
       </div>

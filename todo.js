@@ -4,6 +4,7 @@ var arrHistory= [];
 
 // variable to count completed task
 var c=0;
+//  variable  ishistoryOn
 var isHistoryOn=false;
 
 // getting the element bu=y their Id's
@@ -91,11 +92,14 @@ function addTask (task) {
 // End
 
 
+// function to show notification 
 
 function showNotification(text) {
     alert(text);
 }
 
+
+// event handler to add task item to task list
 function handleInputKeypress(e){
     if(e.key === 'Enter'){
         const text=e.target.value;
@@ -113,9 +117,11 @@ function handleInputKeypress(e){
         addTask(task);
     }
 }
+
+
+// event handler for whole document
 function handleClickListener(e) {
-    // let target=e.target;
-    // console.log(e.target);
+    
 
 
 
@@ -152,6 +158,7 @@ function handleClickListener(e) {
     }
 }
 
+// function to start the application
 function initializeApp(){
     addTaskInput.addEventListener('keyup',handleInputKeypress);
      document.addEventListener('click',handleClickListener);
